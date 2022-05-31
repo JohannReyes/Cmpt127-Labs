@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+
+  double n;
+  int check;
+
+  check = scanf( "%lf", &n );
+
+  if(check == 0)
+  {
+    printf("scanf error: (%d)\n", check);
+  }
+  else
+  {
+    printf("%d %d %d", (int)floor(n), (int)round(n), (int)ceil(n));
+  }
+
+  return 0;
+}

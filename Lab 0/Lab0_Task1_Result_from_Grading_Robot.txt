@@ -1,0 +1,31 @@
+Testing Repo repo.jra81/0 Lab 0 Task 1 at 2021-01-19 10:40:49.348307
+cwd /home/instructor/127/build.jra81.EMPqZW
+sandbox /home/build/sandbox.jra81.ZWf4tE
+Build operations:
+	cp -f REPO/testgit SANDBOX/
+	echo "jra81@sfu.ca" > SANDBOX/email.txt
+	cp -f LAB/usercheck.sh t1
+build OK
+
+Build succeeded.
+Unit test default: 
+	Running Program...
+	Done. Program returned 0
+	stdout ---------------------------------------------------
+	Your SFU email address is:
+	jra81@sfu.ca
+	The contents of file testgit are:
+	jra81@sfu.ca(End of file)
+	
+	Comparing file contents with 'diff', ignoring white space and blank lines.
+	The left side is your file, the right side is the correct solution:
+	jra81@sfu.ca				jra81@sfu.ca
+	(End of files)
+	
+	stderr ---------------------------------------------------
+	(empty)
+	----------------------------------------------------------
+	passed.
+
+All unit tests passed. Task succeeded.
+Logging 6b1df6d jra81 1611081593 0:<module 'task' from '/home/instructor/127/bin/task.pyc'> 0

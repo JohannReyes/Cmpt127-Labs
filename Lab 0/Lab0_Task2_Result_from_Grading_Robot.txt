@@ -1,0 +1,26 @@
+Testing Repo repo.jra81/0 Lab 0 Task 2 at 2021-01-19 10:40:49.446290
+cwd /home/instructor/127/build.jra81.P7YUwX
+sandbox /home/build/sandbox.jra81.l4VeVI
+Build operations:
+	# task fails (and Make quits) if this copy command fails
+	cp -f REPO/handle SANDBOX/
+	# add the handle to the database (specifying a timeout that allows
+	sqlite3 -init <(echo .timeout 2000)  /home/instructor/127/127.sqlite "insert or replace into handles(user,handle) values(\"jra81\", \"vertigo\") "
+	# make a trivial t2 program
+	echo "echo Handle file found. Updated handle to vertigo" > t2
+	chmod +x t2
+build OK
+
+Build succeeded.
+Unit test default: 
+	Running Program...
+	Done. Program returned 0
+	stdout ---------------------------------------------------
+	Handle file found. Updated handle to vertigo
+	stderr ---------------------------------------------------
+	(empty)
+	----------------------------------------------------------
+	passed.
+
+All unit tests passed. Task succeeded.
+Logging 6b1df6d jra81 1611081593 0:<module 'task' from '/home/instructor/127/bin/task.pyc'> 0
